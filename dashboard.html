@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="dashboard-section">
+            <h2>Restaurant Dashboard</h2>
+            <p>View recent donations, list unsold food, and see your impact.</p>
+            <button onclick="listFood()">List Unsold Food</button>
+            <button onclick="viewHistory()">Donation History</button>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>NGO Dashboard</h2>
+            <p>View available food donations, request pickups, and track your impact.</p>
+            <button onclick="claimFood()">Claim Food</button>
+            <button onclick="managePickup()">Manage Pickup Requests</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="dashboard.js"></script> <!-- Link to the JS file -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="dashboard-section">
+            <h2>Welcome, [User's Name]</h2>
+            <div class="dashboard-buttons">
+                <button type="button" onclick="goToImpactPage()">View Your Impact</button>
+                <button type="button" onclick="goToAdminPage()">Settings & Preferences</button>
+                <button type="button" onclick="goToFaqPage()">FAQ</button>
+                <button type="button" onclick="goToAboutPage()">About</button>
+                <!-- Other dashboard functionalities go here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

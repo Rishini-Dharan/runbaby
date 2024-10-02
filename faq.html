@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <main>
+        <section class="faq-section">
+            <h2>Common Questions</h2>
+            <div class="faq">
+                <h3>How does the app work?</h3>
+                <p>The app connects restaurants with NGOs to redistribute surplus food to communities in need.</p>
+            </div>
+            <div class="faq">
+                <h3>What types of food can be donated?</h3>
+                <p>Restaurants can donate any unsold, safe, and non-perishable food items.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I request a pickup?</h3>
+                <p>NGOs can view available food donations and request pickups through the app.</p>
+            </div>
+            <!-- Add more FAQs as needed -->
+        </section>
+
+        <section class="inquiry-section">
+            <h2>Submit Your Inquiry</h2>
+            <form id="inquiry-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Type your message here" required></textarea>
+
+                <button type="button" onclick="submitInquiry()">Submit Inquiry</button>
+            </form>
+        </section>
+
+        <button onclick="goBackToDashboard()">Back to Dashboard</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Food Near You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Available Food Near You</h1>
+    </header>
+
+    <main>
+        <section class="food-listing-section">
+            <div class="filter-options">
+                <label for="locationFilter">Filter by Location:</label>
+                <input type="text" id="locationFilter" placeholder="Enter your location">
+                
+                <label for="foodTypeFilter">Filter by Food Type:</label>
+                <select id="foodTypeFilter">
+                    <option value="all">All</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="grains">Grains</option>
+                    <option value="dairy">Dairy</option>
+                </select>
+
+                <label for="pickupTimeFilter">Filter by Pickup Time:</label>
+                <input type="time" id="pickupTimeFilter">
+            </div>
+
+            <div id="foodListings" class="food-listings">
+                <!-- Food items will be listed here dynamically -->
+            </div>
+
+            <button onclick="requestPickup()">Request Pickup</button>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="foodpickup.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Impact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Impact</h1>
+    </header>
+
+    <main>
+        <section class="impact-section">
+            <h2>Impact Summary</h2>
+            <div id="impact-stats">
+                <p id="meals-donated">Meals Donated: <span id="meals-count">0</span></p>
+                <p id="tons-saved">Tons of Food Saved: <span id="tons-count">0</span></p>
+                <p id="people-fed">People Fed: <span id="people-count">0</span></p>
+            </div>
+            <div id="impact-chart">
+                <!-- Placeholder for any charts (e.g., using Chart.js or similar) -->
+                <canvas id="impactGraph" width="400" height="200"></canvas>
+            </div>
+            <button onclick="viewDonationHistory()">View Donation History</button>
+            <button onclick="goBack()">Go Back to Dashboard</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="impact.js"></script>
+</body>
+</html>

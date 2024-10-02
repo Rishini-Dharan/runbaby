@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings & Preferences</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Settings & Preferences</h1>
+    </header>
+
+    <main>
+        <section class="settings-section">
+            <h2>Profile Management</h2>
+            <form id="settings-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="New Password">
+
+                <label for="role">Role:</label>
+                <select id="role">
+                    <option value="restaurant">Restaurant</option>
+                    <option value="ngo">NGO</option>
+                </select>
+
+                <h3>Notification Preferences</h3>
+                <label for="notifications">Receive Notifications:</label>
+                <input type="checkbox" id="notifications" checked>
+
+                <h3>Language & Theme Settings</h3>
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                </select>
+
+                <button type="button" onclick="saveChanges()">Save Changes</button>
+                <button type="button" onclick="logout()">Logout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Food Redistribution App</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
